@@ -5,9 +5,11 @@ gem "rails", "~> 8.1.1"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"
 # Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 2.1", platforms: [:ruby]
+gem "sqlite3", "~> 2.1", platforms: [ :ruby ]
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
+# adding devise
+gem "devise"
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
@@ -19,7 +21,7 @@ gem "jbuilder"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
-
+gem "fiddle", require: false
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", "~> 1.2025.2"
 # Use the database-backed adapters for Rails.cache, Active Job, and Action Cable
@@ -28,7 +30,7 @@ gem "solid_queue"
 gem "solid_cable"
 
 # Reduces boot times through caching; required in config/boot.rb
-#gem "bootsnap", require: false
+# gem "bootsnap", require: false
 
 # Deploy this application anywhere as a Docker container [https://kamal-deploy.org]
 gem "kamal", require: false
@@ -51,8 +53,11 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
- 
-  #useful gems for deveiopment
+  gem "rubocop", "~> 1.81", require: false
+  gem "rubocop-rails", "~> 2.33", require: false
+  gem "rubocop-performance", "~> 1.26", require: false
+
+  # useful gems for deveiopment
   gem "pry"
   gem "faker"
   gem "dotenv-rails"
@@ -61,6 +66,7 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+  gem "ruby-lsp", "~> 0.26.3"
 end
 
 group :test do
