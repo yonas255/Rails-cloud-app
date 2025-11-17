@@ -17,6 +17,7 @@ module Myapp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 8.1
+    config.action_cable.mount_path = "/cable"
 
     config.assets.enabled = false
 
@@ -26,6 +27,9 @@ module Myapp
     # Common ones are `templates`, `generators`, or `middleware`, for example.
     config.autoload_lib(ignore: %w[assets tasks])
 
+
+    # make sure the actiocable Loads
+    config.eager_load_paths << Rails.root.join("app/channels")
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files

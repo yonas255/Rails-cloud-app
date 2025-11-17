@@ -1,0 +1,12 @@
+services:
+- type: web
+  name: rails-cloud-app
+  env: ruby
+  buildCommand: bundle install && bundle exec rake assets:precompile
+  startCommand: bundle exec puma -C config/puma.rb
+  plan: free
+  envVars:
+  - key: RAILS_MASTER_KEY
+    sync: false
+
+
