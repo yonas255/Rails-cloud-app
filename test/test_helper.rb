@@ -9,7 +9,8 @@ module ActiveSupport
 
     # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
     fixtures :all
-
+    # enable devise test helpers for controller & integration Tests
+    include Devise::Test::IntegrationHelpers
     # Add more helper methods to be used by all tests here...
   end
 end
