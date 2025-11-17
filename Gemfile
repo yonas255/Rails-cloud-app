@@ -6,6 +6,8 @@ gem "rails", "~> 8.1.1"
 gem "propshaft"
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", "~> 2.1", platforms: [ :ruby ]
+#PostgreSQL in production
+gem "pg", "~> 1.5"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 # adding devise
