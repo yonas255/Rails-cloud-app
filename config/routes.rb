@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   #  root "dashboard#index", as: :authenticated_root
   # end
 
+  root "pages#home"
+
   unauthenticated do
     root "pages#home", as: :unauthenticated_root
   end
