@@ -1,6 +1,9 @@
 # Pin application
 pin "application"
 
+# bootstrap
+pin "bootstrap", to: "bootstrap.min.js", preload: true
+
 # Turbo (needed for delete)
 pin "@hotwired/turbo-rails", to: "turbo.min.js", preload: true
 
