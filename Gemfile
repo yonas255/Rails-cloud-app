@@ -25,7 +25,7 @@ gem "jbuilder"
 # gem "bcrypt", "~> 3.1.7"
 gem "fiddle", require: false
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", "~> 1.2025.2"
+gem "tzinfo-data", "~> 1.2025.3"
 # Use the database-backed adapters for Rails.cache, Active Job, and Action Cable
 gem "solid_cache"
 gem "solid_queue"
