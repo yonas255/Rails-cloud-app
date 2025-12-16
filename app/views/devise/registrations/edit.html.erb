@@ -1,3 +1,7 @@
+<!--Displays  Devise form for editing user account details-->
+<!--Allows updating email and password with validation and confirmation-->
+<!--Requires current password to securely apply changes-->
+<!--Provides options to update the account, cancel it, or navigate back -->
 <h2>Edit <%= resource_name.to_s.humanize %></h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>

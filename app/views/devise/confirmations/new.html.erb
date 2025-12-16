@@ -1,3 +1,7 @@
+<!--Displys a form for resending account confirmation instruction-->
+<!--uses Devise helper to handle confirmation request securely-->
+<!--provides an email input field with autofill and validation support-->
+<!--shows error message if the submission fails and includes a submit button and Devise navigation links-->
 <h2>Resend confirmation instructions</h2>
 
 <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>

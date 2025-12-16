@@ -1,5 +1,11 @@
-require "application_system_test_case"
+# defines a system test class for a posts functionality
+# inherits from application system Test case to enable browser-based testing
 
+# test case to verify that a post can be created successfully
+# simulate a real user creating a new post through the UI
+require "application_system_test_case"
+# navigates to the posts index page
+# entry point for creating a new post
 class PostsTest < ApplicationSystemTestCase
   test "creating a post" do
     visit posts_path
