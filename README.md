@@ -62,31 +62,7 @@ GitHub Actions is used to automate testing, linting, and security checks on ever
 
 Author
 Yonas Haftom
-Student ID: 23154454
 
 License
 This project was developed for academic purposes.
 
-yaml
-Copy code
-
----
-
-##  Why this is enough
-✔ Professional  
-✔ Clear  
-✔ Covers all module expectations  
-✔ No unnecessary detail  
-✔ Looks good to examiners  
-
----
-
-## Next step
-1. Paste this into `README.md`
-2. Save
-3. Commit and push again:
-
-```bash
-git add README.md
-git commit -m "Update README with project overview and setup instructions"
-git push origin main
