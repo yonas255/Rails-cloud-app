@@ -23,34 +23,30 @@ CloudTask is a cloud-based Software as a Service (SaaS) application developed us
 
 # Setup Instructions (Local)
 1. Clone the repository:
-```bash
+```
 git clone https://github.com/your-username/rails-cloud-app.git
 cd rails-cloud-app
 Install dependencies:
 
-bash
-Copy code
+
+
 bundle install
 Set up the database:
 
-bash
-Copy code
+
 rails db:create db:migrate
 Start the server:
 
-bash
-Copy code
+
 rails s
 Open in browser:
 
-arduino
-Copy code
+run:
 http://localhost:3000
  Running Tests
 Run the full test suite using:
 
-bash
-Copy code
+
 bundle exec rspec
 Deployment
 The application is deployed on the Render cloud platform and is accessible via the following URL:
