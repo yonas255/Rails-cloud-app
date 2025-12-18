@@ -56,7 +56,7 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
   gem "rubocop", "~> 1.81", require: false
-  gem "rubocop-rails", "~> 2.33", require: false
+  gem "rubocop-rails", "~> 2.34", require: false
   gem "rubocop-performance", "~> 1.26", require: false
 
   # useful gems for deveiopment
